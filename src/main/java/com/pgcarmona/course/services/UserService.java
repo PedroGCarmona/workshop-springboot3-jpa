@@ -10,15 +10,15 @@ import com.pgcarmona.course.repositories.UserRepository;
 
 @Service
 public class UserService {
-	
-	@Autowired 
+
+    @Autowired
     UserRepository userRepository;
-	
-    public List<User> findAll(){
+
+    public List<User> findAll() {
         return userRepository.findAll();
     }
 
-    public User findById(Long id){
+    public User findById(Long id) {
         return userRepository.findById(id).get();
     }
 }

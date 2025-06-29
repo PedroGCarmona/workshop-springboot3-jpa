@@ -10,15 +10,15 @@ import com.pgcarmona.course.repositories.OrderRepository;
 
 @Service
 public class OrderService {
-    
+
     @Autowired
     private OrderRepository orderRepository;
 
-    public List<Order> findAll(){
+    public List<Order> findAll() {
         return orderRepository.findAll();
     }
 
-    public Order findById(Long id){
+    public Order findById(Long id) {
         return orderRepository.findById(id).get();
     }
 }
